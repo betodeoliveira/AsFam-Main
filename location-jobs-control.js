@@ -1,11 +1,12 @@
-if ($(".vertical-card-list_empty-state.is-news").length >= 0) {
+if ($(".vertical-card-list_empty-state.is-news").length >= 1) {
     $("#news-arrow-prev").remove();
     $("#news-arrow-next").remove();
 }
 
-if ($(".vertical-card-list_empty-state.is-jobs").length >= 0) {
+if ($(".vertical-card-list_empty-state.is-jobs").length >= 1) {
     $("#jobs-arrow-prev").remove();
     $("#jobs-arrow-next").remove();
+    $(".vertical-card_layout.is-more-jobs").remove();
 }
 
 setTimeout(function() {
